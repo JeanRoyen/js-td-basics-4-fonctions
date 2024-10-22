@@ -11,6 +11,17 @@ N.B. Faites deux versions :
    - en utilisant la syntaxe classique
    - en utilisant une arrow function
 */
+function calcMin(a, b) {
+    if (a > b) {
+        return a = b;
+    } else {
+        return b = a
+    }
+}
+
+console.log(calcMin(4.5, 5));
+console.log(calcMin(19, 9))
+console.log(calcMin(1, 1))
 
 // Syntaxe classique
 

@@ -1,6 +1,6 @@
 /*****************************
-* 021 - Function Statements and Expressions
-*/
+ * 021 - Function Statements and Expressions
+ */
 
 /*
 1. Déclarez, en utilisant une fonction expression, la fonction whatDoYouDo
@@ -12,14 +12,26 @@
    - dans tous les autres cas, "does something else"
 */
 
-const whatDoYouDo = function(job, firstName) {
-    // Utilisez des conditions (if/else if) pour décrire le job de la personne en fonction de la valeur de 'job'.
-    // Renvoyez la phrase appropriée en utilisant un return.
+const whatDoYouDo = function (job, firstName) {
+    if (job === "teacher") {
+        return console.log(firstName + " teaches kids how to code");
+    } else if (job === "driver") {
+        return console.log(firstName + " drives a cab in Lisbon");
+    } else if (job === "designer") {
+        return console.log(firstName + " designs beautiful websites");
+    } else {
+        return console.log(firstName + " does something else");
+    }
 };
 
+// Utilisez des conditions (if/else if) pour décrire le job de la personne en fonction de la valeur de 'job'.
+// Renvoyez la phrase appropriée en utilisant un return.
 /*
 2. Utilisez cette fonction pour afficher dans la console ce que font :
     - John (teacher)
     - Jane (designer)
     - Mark (retired)
 */
+whatDoYouDo("teacher", "John");
+whatDoYouDo("designer", "Jane");
+whatDoYouDo("retired", "Mark");

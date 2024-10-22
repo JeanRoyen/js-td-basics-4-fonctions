@@ -14,6 +14,21 @@ Aide : votre fonction s'exécute avec le pattern suivant : calculer(nb1, "+", nb
 
 // Déclaration de la fonction calculer
 
-
+function calculer(a, b, symbole) {
+    switch (symbole) {
+        case "add":
+            return a + b
+        case "sous":
+            return a - b
+        case "mult":
+            return a * b
+        case "div":
+            return a / b
+    }
+}
+console.log(calculer(4, 6, "add"));  // Affiche 10
+console.log(calculer(4, 6, "sous")); // Affiche -2
+console.log(calculer(2, 0, "mult")); // Affiche 24
+console.log(calculer(`12`, 0, "div"));  // Affiche 0.6666...
 // Utilisation de la fonction calculer
 

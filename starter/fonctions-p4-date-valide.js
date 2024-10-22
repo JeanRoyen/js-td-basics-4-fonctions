@@ -12,9 +12,30 @@ FONCTIONS - PRÉPA 4 : Date valide - version 2
 // Fonction pour vérifier si une année est bissextile
 
 
+
 // Fonction pour vérifier si une date est valide
 
-
+function isValid (day, month, year) {
+    const maxDay = 31
+    if (day && month && year) {
+        if (day > 0 && month > 0 && year > 0) {
+            if (month <= 12){
+                if (day <= maxDay) {
+                    console.log(`La date ${day}/${month}/${year} est valide`)
+                } else {
+                    console.log(`Le jour doit être inférieur ou égal à ${maxDay}`)
+                }
+            } else {
+                console.log("Le mois doit être inférieur à 12")
+            }
+        } else {
+            console.log("Entrez un nombre positif");
+        }
+    } else {
+        console.log("Entrez un nombre");
+    }
+}
+isValid(prompt("Entrez le jour"), prompt("Entrez le mois"), prompt("Entrez l'année"))
 // Demander à l'utilisateur de saisir une date
 
 

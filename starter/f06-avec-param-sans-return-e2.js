@@ -32,14 +32,19 @@
    a) "Baptiste"
    b) "Sophie"
 */
-
+function direBonjour(userName) {
+    console.log("Bonjour ! " + userName);
+    console.log("Hello ! " + userName);
+    console.log("Comment vas-tu ? " + userName);
+    console.log("Hey, salut ! " + userName);
+    console.log("Buenos dias ! " + userName);
+}
+direBonjour('Baptiste')
 // 1°) Déclaration de la fonction avec paramètre
 
-function direBonjour(prenom) {
     // Utilisez le paramètre prenom pour les affichages
     // par exemple : console.log("Bonjour " + prenom + " !");
     // Continuez avec les autres messages
-}
 
 /*
 Au moment de la DÉCLARATION de la fonction, on définit le paramètre
@@ -55,3 +60,4 @@ puis on l'utilise dans le corps de la fonction
 /* 
 Au moment de l'APPEL de la fonction, on donne une VALEUR au paramètre
 */
+

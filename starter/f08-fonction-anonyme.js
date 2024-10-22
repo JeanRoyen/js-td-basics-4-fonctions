@@ -14,6 +14,10 @@
 - Exécutez la fonction
 */
 
+const direbonjour = function () {
+        console.log("Bonjour ! 1" )
+}
+direbonjour()
 // Expression de fonction sans paramètre ni return
 
 
@@ -29,8 +33,13 @@
 - Utilisez-la pour afficher "Bonjour !" dans la console
 */
 
+const disBonjour = function () {
+        console.log("Bonjour ! 2");
+        return
+}
+disBonjour();
 // Expression de fonction sans paramètre mais avec return
-;
+
 
 // Utilisation de la fonction pour afficher "Bonjour !" dans la console
 
@@ -46,6 +55,11 @@
 - Utilisez-la pour saluer Thomas dans la console
 */
 
+const salue = function (prenom) {
+    const message = "Bonjour ! 3";
+    return message + " " + prenom;
+}
+console.log(salue("Thomas"))
 // Expression de fonction avec paramètre et return
 
 // Utilisation de la fonction pour saluer Thomas dans la console
