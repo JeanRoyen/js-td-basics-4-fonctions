@@ -17,7 +17,10 @@
 - Déclarez la fonction ci-dessus en utilisant la syntaxe "fat arrow function"
 - Utilisez-la pour saluer Thomas dans la console
 */
-// Fonction anonyme avec la syntaxe "fat arrow function"
+const bonjour = prenom => { // Possible d'enlever les parenthèse quand on a un seu
+    console.log("Bonjour !" + prenom);
+}
+bonjour("Thomas")// Fonction anonyme avec la syntaxe "fat arrow function"
 
 // Utilisation de la fonction pour saluer Thomas dans la console
 

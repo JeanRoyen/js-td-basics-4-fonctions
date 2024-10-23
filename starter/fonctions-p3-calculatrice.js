@@ -14,8 +14,8 @@ Aide : votre fonction s'exécute avec le pattern suivant : calculer(nb1, "+", nb
 
 // Déclaration de la fonction calculer
 
-function calculer(a, b, symbole) {
-    switch (symbole) {
+function calculer(a, b, operateur) {
+    switch (operateur) {
         case "add":
             return a + b
         case "sous":
